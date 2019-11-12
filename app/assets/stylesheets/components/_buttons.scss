@@ -1,0 +1,21 @@
+.button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  max-width: 100%;
+  color: $purple;
+  text-decoration: none;
+  border: 2px solid $purple;
+  box-shadow: 1px 1px 2px grey;
+  border-radius: 3px;
+  padding: 15px;
+  margin-top: 30px;
+  border-style: solid;
+
+}
+
+.button-purple {
+  background: linear-gradient( $light-purple, $purple);
+  color: white;
+  border-style: none
+
+}

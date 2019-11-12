@@ -1,1 +1,10 @@
 // Specific CSS for your home-page
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px
+}
