@@ -1,0 +1,2 @@
+class HardElement < ApplicationRecord
+end

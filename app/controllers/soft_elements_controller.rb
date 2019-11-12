@@ -1,0 +1,2 @@
+class SoftElementsController < ApplicationController
+end

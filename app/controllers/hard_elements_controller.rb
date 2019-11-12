@@ -1,0 +1,2 @@
+class HardElementsController < ApplicationController
+end

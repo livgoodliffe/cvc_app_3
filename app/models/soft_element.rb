@@ -1,0 +1,2 @@
+class SoftElement < ApplicationRecord
+end
