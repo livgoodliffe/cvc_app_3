@@ -1,5 +1,16 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  get 'pages/home'
+  get 'pages/about', as: :about
+  get 'pages/wheel', as: :wheel
+
+  resources :users
+
+  resources :projects
+
+  resources :hardelements, only: [:index, :show]
+  resources :softelements, only: [:index, :show]
+
 end

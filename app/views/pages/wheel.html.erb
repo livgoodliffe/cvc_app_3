@@ -1,0 +1,19 @@
+<nav class="navbar sticky-top navbar-light bg-light">
+  <%= link_to (:back) do %>
+      <i class="far fa-arrow-left"></i>
+  <% end %>
+  <span class="navbar-brand"><%= @project.name %></span>
+  <a class="navbar-brand" href="#">
+    <i class="fal fa-info-circle"></i>
+  </a>
+</nav>
+
+<div class="container">
+
+  <h2>Choose hard or soft elements</h2>
+
+  <%= link_to "Soft Elements", "/softelements", class: "button button-purple" %>
+
+  <%= link_to "Hard Elements", "/hardelements", class: "button button-purple" %>
+
+</div>

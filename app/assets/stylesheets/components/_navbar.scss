@@ -1,8 +1,14 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: $light-gray;
+  align-items: center;
 }
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
+}
+
+.navbar-icon {
+  font-size: 30px;
+  color: gray;
 }

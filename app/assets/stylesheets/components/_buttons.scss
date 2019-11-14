@@ -10,12 +10,20 @@
   padding: 15px;
   margin-top: 30px;
   border-style: solid;
-
 }
 
 .button-purple {
   background: linear-gradient( $light-purple, $purple);
   color: white;
   border-style: none
+}
 
+.btn-purple {
+  background: $purple;
+  color: white;
+  box-shadow: 1px 1px 2px gray;
+  &:hover {
+    background: $light-purple;
+    color: white
+  }
 }

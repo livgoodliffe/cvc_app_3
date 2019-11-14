@@ -1,0 +1,18 @@
+<nav class="navbar sticky-top navbar-light bg-light">
+  <%= link_to (:back) do %>
+      <i class="far fa-arrow-left"></i>
+  <% end %>
+  <span class="navbar-brand"><%= @project.name %></span>
+  <a class="navbar-brand" href="#">
+    <i class="fal fa-info-circle"></i>
+  </a>
+</nav>
+
+<div class="container">
+  <h3>Name: <%= @project.name %></h3>
+  <h5>Address: <%= @project.address %></h5>
+
+  <%= link_to "Start Assessment", "/pages/wheel", class: "button button-purple" %>
+
+  <%= link_to 'Back', :back %>
+</div>
