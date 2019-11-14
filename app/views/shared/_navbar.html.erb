@@ -2,7 +2,9 @@
 
   <% if current_page?(root_path) %>
 
-    <span>CVC</span>
+    <%= link_to "/", class: "navbar-brand" do %>
+      <%= image_tag "logo.jpg", class: "nav-logo" %>
+    <% end %>
 
   <% else %>
 
