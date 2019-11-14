@@ -6,6 +6,4 @@ class User < ApplicationRecord
 
   has_many :projects
 
-  attr_accessor :name, :email, :company
-
 end
