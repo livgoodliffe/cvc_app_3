@@ -1,12 +1,12 @@
   <%= image_tag "logo.jpg", alt: "Creating Vibrant Communities", class: 'logo' %>
 
-
-  <!-- Get Started or Log in  -->
-
     <% if user_signed_in? %>
-      <%= link_to "GET STARTED", "/projects/new", class: "button button-purple" %>
+
+      <%= link_to "GET STARTED", user_path(current_user), class: "button button-purple" %>
 
     <% else %>
+
+
       <%= link_to "GET STARTED", new_user_session_path, class: "button button-purple" %>
     <% end %>
 

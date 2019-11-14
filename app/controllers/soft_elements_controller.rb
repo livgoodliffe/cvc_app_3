@@ -1,5 +1,7 @@
 class SoftElementsController < ApplicationController
 
+  skip_before_action :authenticate_user!
+
   SOFTELEMENTS = {
     1 => { name: "people", whiteicon: "white_icons/people" },
     2 => { name: "place", whiteicon: "white_icons/place" },

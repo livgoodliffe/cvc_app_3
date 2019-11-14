@@ -1,5 +1,7 @@
 class HardElementsController < ApplicationController
 
+  skip_before_action :authenticate_user!
+
   HARDELEMENTS = {
     1 => { name: "public realm", whiteicon: "white_icons/public_realm" },
     2 => { name: "transport", whiteicon: "white_icons/transport"},
