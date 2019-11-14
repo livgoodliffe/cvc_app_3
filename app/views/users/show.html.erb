@@ -1,5 +1,34 @@
-<h1>Welcome</h1>
+<h1>Welcome <%= current_user.name %>!</h1>
 
-<h3><%= current_user.name %></h3>
 <h3><%= current_user.company %></h3>
+
+<%= link_to "NEW PROJECT", "/projects/new", class: "button button-purple" %>
+
+<div class="grey-band mt-10 mb-20">
+  <h5>Your projects:</h5>
+</div>
+
+<br>
+
+<div class="card">
+  <div class="d-flex justify-content-between" >
+    <div style="text-align: left">
+      <h3 class="m-2">Project name</h3>
+      <h6 class="m-2">Project address</h6>
+    </div>
+
+    <div>
+      <h2 class="m-2">Score</h2>
+    </div>
+  </div>
+
+  <div class="d-flex">
+    <div class="btn btn-light btn-lg btn-block m-0" style="border: 0.1px solid gray">
+      View
+    </div>
+    <div class="btn btn-light btn-lg btn-block m-0" style="border: 0.1px solid gray">
+      Edit
+    </div>
+  </div>
+</div>
 
